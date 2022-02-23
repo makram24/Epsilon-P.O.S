@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif ;
+    /*font-family: 'Lateef', cursive;*/
+    /*font-family: 'Mirza', cursive;*/
+}
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #343a40;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: lightgray;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #343a40;  /* creates padding around scroll thumb */
+}
+body {
+  width            : 100%;
+  height           : 100%;
+  color            : black;
+  background: #2E2E2E;
+  /* background: -moz-linear-gradient(45deg, rgba(225,225,225,1) 0%, rgba(39,60,109,1) 40%, rgba(39,60,109,1) 60%, rgba(225,225,225,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(225,225,225,1)), color-stop(40%, rgba(39,60,109,1)), color-stop(60%, rgba(39,60,109,1)), color-stop(100%, rgba(225,225,225,1)));
+  background: -webkit-linear-gradient(45deg, rgba(225,225,225,1) 0%, rgba(39,60,109,1) 40%, rgba(39,60,109,1) 60%, rgba(225,225,225,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(225,225,225,1) 0%, rgba(39,60,109,1) 40%, rgba(39,60,109,1) 60%, rgba(225,225,225,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(225,225,225,1) 0%, rgba(39,60,109,1) 40%, rgba(39,60,109,1) 60%, rgba(225,225,225,1) 100%);
+  background: linear-gradient(45deg, rgba(225,225,225,1) 0%, rgba(39,60,109,1) 40%, rgba(39,60,109,1) 60%, rgba(225,225,225,1) 100%); */
+
+}
+.centerv {
+  position          : relative;
+  top               : 50%;
+  -moz-transform    : translateY(-50%);
+  -ms-transform     : translateY(-50%);
+  -o-transform      : translateY(-50%);
+  -webkit-transform : translateY(-50%);
+  transform         : translateY(-50%);
+}
+.number{
+  background-color: black;
+  border: thin solid white;
+  width: 30%;
+  float: left;
+  text-align: center;
+  height: 10%;
+  margin: 1.1%;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+.number p{
+  width: 100%;
+}
+.number:hover{
+  background: lightgray;
+}
+.navigation{
+  display: inline-block;
+  float: right;
+  padding: 0 20px;
+  height: 100%;
+}
+.headerdiv{
+  height: 8%;
+  background: black;
+  color: white;
+}
+.headerdiv a{
+    color: black;
+}
+.headerdiv a:hover{
+  -moz-box-shadow    : inset 0 0 10px #000000;
+  -webkit-box-shadow : inset 0 0 10px #000000;
+  box-shadow         : inset 0 0 10px #000000;
+
+}
+.logoimage{
+  height: 219%;
+  margin-top: -16%;
+  width: 100%;
+
+}
+.floatleft{
+  float: left !important;
+}
+.floatright{
+  float: right !important;
+}
+
+.bread{
+  width: 80px;
+  background: #2E2E2E;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  color: white;
+
+}
+.breadimage{
+  height: 40px;
+  margin-top: 5px;
+}
+
+.Chocolate{
+  width: 80px;
+  background: #2E2E2E;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  color: white;
+}
+.chocolateimage{
+  width: 50px;
+  margin-top: 5px;
+}
+
+.category{
+  width: 90px;
+  height: 80px;
+  background: #4C4A4A;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.homeimage{
+  width: 50px;
+  margin-top: 5px;
+}
+.itemscont{
+  width: 100%;
+  display: none;
+  margin: 15px 0;
+}
+.systemmain{
+  width: 100%;
+  height: 91%;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+.invoicecont{
+  width: 100%;
+  border-collapse: collapse;
+  color: black;
+}
+.invoicecont th{
+  /* border-bottom: 3px double black; */
+  padding: 5% 0;
+  font-size: 14px;
+  /*border: 1px solid red;*/
+}
+.invoicecont td{
+  text-align: center;
+  padding: 2% 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 20px;
+  /*border-top: thin solid black;*/
+  /*border-bottom: thin solid black;*/
+}
+.logo{
+  /*border: thin solid #2a87f9;*/
+  padding: 5% 0 !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px !important;
+  color: black;
+  width: 100%;
+}
+.logo img{
+  width: 100%;
+}
+.location,.phone{
+  text-align: left;
+  padding: 1px 0;
+  font-size: 14px;
+}
+.invoiceinformation{
+  padding-bottom: 2% !important;
+  font-size: 16px;
+  border-bottom: 3px double black;
+}
+.invoicesec2{
+  width: 100%;
+  /* height: 95%; */
+  /* padding: 1% 0; */
+  /* float: right; */
+  /* background: red; */
+}
+
+.login{
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+#login {
+
+}
+.inputtext{
+  margin: 10px;
+  width: 80%;
+  color: black;
+}
+.button {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: none;
+  border: none;
+}
+.shadowout {
+  -moz-box-shadow    : 0 0 10px 5px black;
+  -webkit-box-shadow : 0 0 10px 5px black;
+  box-shadow         : 0 0 10px 5px black;
+}
+.errorlogin{
+  text-align: center;
+  /*border: 1px solid #fff;*/
+  width: 100%;
+  padding: 2% 0;
+  background: #440f0f;
+  color: white;
+  margin: 1% 0;
+  border-radius: 3px;
+}
+.loginbtn{
+  /* background: white; */
+  height: 100%;
+  /* text-shadow: -2px 2px 2px #878787; */
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.83);
+  text-align: center;
+  /*border: 2px solid red;*/
+  padding: 0.5% 0;
+  /* float: right; */
+  /* padding: 1% 5%; */
+  background: #143a55;
+  color: white;
+  /* border-radius: 3px; */
+}
+.logoin_parent{
+  margin-right: 1%;
+  /* border: 2px solid black; */
+  width: 17%;
+  float: right;
+  padding: 0.3%;
+  /* border-radius: 5px; */
+}
+.logoin{
+  color: white;
+  /* text-shadow: -2px 2px 2px #878787; */
+  font-weight: bold;
+  font-size: 2.2vw;
+  text-align: center;
+  /*border: 2px solid red;*/
+  padding: 5px 0;
+  border-radius: 3px;
+  /* border: 3px solid #cf6c24; */
+  font-family: 'Lateef', cursive;
+  /*border-radius: 5px;*/
+}
+.invoicesec{
+  /*border: 1px solid red;*/
+  width: 100%;
+  float: left;
+  padding: 0 2%;
+  color: black;
+  background: white;
+  height: 65%;
+  margin-top: 15px;
+  overflow: auto;
+  font-weight: bold;
+  -moz-box-shadow    : 0 0 10px 5px black;
+  -webkit-box-shadow : 0 0 10px 5px black;
+  box-shadow         : 0 0 10px 5px black;
+}
+.checkbox{
+  display: none;
+}
+.item_quantity{
+  text-align: center;
+  width: 15%;
+}
+.item_name{
+  text-align: left;
+  width: 48%;
+  padding: 0 1%;
+}
+.item_price{
+  text-align: left;
+  vertical-align: top;
+  /*border: 1px solid red;*/
+  width: 35%;
+}
+.total1{
+  padding-top: 5% !important;
+  font-weight: bold;
+  /*text-align: center !important;*/
+  font-size: 16px !important;
+}
+.button3{
+  padding: 10%;
+  cursor: pointer;
+  display: none;
+  font-size: 12px;
+  float: left;
+  /*border: 1px solid red;*/
+}
+.total{
+  font-weight: bold;
+  text-align: center !important;
+  font-size: 18px !important;
+  /*padding-bottom: 5% !important;*/
+}
+.border{
+  /*border-top:  3px solid black;*/
+  border-top:  3px double black;
+}
+.thanks{
+  text-align: left;
+  /*border-top: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
+  padding: 5% 0 !important;
+  /*padding-top: 10% !important;*/
+}
+.itemsbotton{
+  /*border: 1px solid red;*/
+  display: inline-block;
+  padding: 15px 15px;
+  margin-top: 2%;
+  margin-left:2%;
+  background: #133779;
+  color: white;
+  border-radius: 3px;
+  /*width: 100%;*/
+  text-align: center;
+}
+.controls{
+  border: 2px solid black;
+      border-radius: 8px;
+      /* margin-top: 0px; */
+      position: absolute;
+      bottom: 0;
+      background: #2E2E2E;
+      width: 94%;
+      left: 3%;
+      height: 32%;
+}
+.paymentmethod, .discountsec {
+    padding: 0.5% 0;
+    /* padding-left: 2%; */
+    float: right;
+    width: 33%;
+    text-align: center;
+  }
+.paymentmethod,.discountsec{
+  display: none;
+}
+.paymentmethod,.discountsec{
+    position: fixed;
+    top: 73%;
+    left: 50%;
+}
+.paymentmethod a{
+  text-decoration: none;
+  color: black;
+}
+.inputtext3{
+  width: 32%;
+  background: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.4vw;
+  padding: 2%;
+  margin-right: 7%;
+  /* margin-top: 4%; */
+  font-family: 'Cuprum', sans-serif;
+}
+.button4{
+  text-align: center;
+  border:none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: black;
+  font-family: 'El Messiri', sans-serif ;
+  font-size: 1.2vw;
+  padding: 1%;
+  margin: 2% 0;
+  margin-right: 5%;
+  border: 1px solid black;
+  background: #504848;
+  color: white;
+  float: right;
+  /* -moz-box-shadow    : inset 0 0 10px #000000;
+  -webkit-box-shadow : inset 0 0 10px #000000;
+  box-shadow         : inset 0 0 10px #000000; */
+}
+.back{
+      position: fixed;
+      width: 2%;
+      margin-top: 10px;
+  /*border: 1px solid red;*/
+}
+.back img{
+  width: 100%;
+}
+.back img:hover{
+  background: red;
+}
+.item1{
+  float: left;
+}
+.item2{
+  float: left;
+}
+.item3{
+  float: left;
+}
+.logoutimg {
+      height: 53%;
+      margin: 10px;
+      float: right;
+}
+.settingsimg{
+  height: 54%;
+  margin: 10px;
+  float: right;
+}
+.settings_child{
+      width: 100%;
+    height: 12%;
+    background: #2E2E2E;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 27px;
+    color: white;
+    background: #a558e0;
+}
+.settings_parent{
+  background: :#2E2E2E;
+}
+.settingsbottom{
+  color: white;
+    text-align: center;
+    margin-top: 4px;
+    padding: 10px;
+    line-height: 46px;
+}
+.settingsbottom1{
+  color: white;
+    text-align: center;
+    margin-top: 14px;
+    padding: 10px;
+}
+.items{
+  /* border: black; */
+  width: 80px;
+  height: 70px;
+  background: #a558e0;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  /* margin-top: 15px; */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  color: white;
+
+}
+.itembotton{
+  /* border: black; */
+  width: 89px;
+  height: 80px;
+  background: #7210c7;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  float: left;
+  padding: 10px;
+  /* margin-top: 15px; */
+  text-align: center;
+  color: white;
+
+}
+.controlbotton{
+      float: left;
+      line-height: 34px;
+      height: 25%;
+      margin: 10px 1%;
+      padding: 1%;
+      text-align: center;
+      color: white;
+      background: black;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 23%;
+}
+.controlbotton:hover{
+  background: black;
+}
+.controlbotton1{
+  border: 2px solid black;
+      background: black;
+      /* float: left; */
+      margin: 8px 7%;
+      text-align: center;
+      padding: 2% 0;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 42%;
+}
+.Search {
+  margin-left: 10px;
+  width: 89%;
+  border: 1px solid black;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 3px;
+}
+.input_img{
+  width: 5%;
+height: 19%;
+margin-bottom: -2%
+}
+#input_container{
+  margin-top: 15px;
+}
+.uperdiv{
+  background: #4C4A4A;
+  border: 1px solid black;
+  margin-top: 5px;
+  border-radius: 10px;
+  margin-left: -2%;
+}
+.selectcategory{
+    width: 15%;
+    background: transparent;
+    color: white;
+    border: none;
+}
+#selectcategory{
+  width: 15%;
+  background: black;
+  color: white;
+  border: none;
+}
+.margin-{
+  margin-top: -3%;
+}
+option{
+  background: #4C4A4A;
+}
+.addnewiteminput{
+  height: 6%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.button2 {
+  border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 38%;
+    width: 20%;
+    height: 6%;
+    margin-top: 10%;
+}
+.success{
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: white;
+      padding: 10px;
+      background: black;
+      border: 1px solid black;
+      border-radius: 12px;
+}
+.loginbtn1{
+  width: 14%;
+margin: 10px;
+font-weight: bold;
+}
+.tax{
+    width: 60px;
+}
+.orderid{
+  margin: 10px;
+  margin-left: -14px;
+}
+.customername{
+      float: right;
+      margin: 10px;
+      margin-right: -10px;
+}
+.purcahsetable{
+  background: white;
+  border: 2px solid gray;
+
+}
+.actualamount{
+    width: 100px;
+}
+.price{
+    width: 60px;
+}
+.quantity{
+   width: 60px;
+}
+.tablepur{
+  margin: 20px;
+margin-left: 10%;
+}
+.active{
+  background: #327ba8;
+}
+.button3{
+  padding: 10%;
+  cursor: pointer;
+  display: none;
+  font-size: 12px;
+  float: left;
+/*border: 1px solid red;*/}
+.returninvoicetable{
+  background: gray;
+    width: 100%;
+}
+.tablereturninv{
+  width: 100px;
+  padding: 10px;
+}
